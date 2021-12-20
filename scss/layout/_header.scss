@@ -1,0 +1,85 @@
+.header{
+    width: 100%;
+    background-color: hsl(249, 68%, 96%);
+    padding-bottom: 30px;
+
+    &-container{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        
+        @include respond(tab-port){
+            flex-direction: column;
+            gap: 30px;    
+        }
+        @include respond(phone){
+            width: 100%;
+            padding: 0 20px;
+        }
+    }
+    &-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 30px;
+        @include respond(tab-port){
+            order: 2;
+        }
+    }
+    &-img{
+        width: 100%;
+        margin-top: 15px;
+        & img{
+            width: 100%;
+        }
+        
+        @include respond(tab-port){
+            order: 1;
+        }
+    }
+}
+.section-brands{
+    background-color: #F1EFFC;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.brand-border{
+    width: 80%;
+    margin: auto;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+}
+.brands{
+    width: 70%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+    @include respond(phone){
+        width: 90%;
+    }
+
+    & img{
+        cursor: pointer;
+        opacity: 0.5;
+        transition: all 0.25s;
+        &:hover{
+            opacity: 1;
+        }
+        @include respond(phone){
+            width: 70px;
+        }
+    }
+}
