@@ -211,6 +211,11 @@ ul {
   font-size: 18px;
 }
 
+.btn-primary:active  {
+    color: #fff;
+    background-color: #7562E0;
+    border-color: #7562E0;
+}
 .btn-primary:hover {
   border-color: #5e4eb3;
   background-color: #5e4eb3;
